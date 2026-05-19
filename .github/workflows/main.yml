@@ -1,16 +1,19 @@
 name: CI pipeline
-on: 
+
+on:
   push:
     branches:
-      -main
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    -uses: actions/checkout@v4
 
-    -name: check git version
-     run: git --version
+    steps:
+      - uses: actions/checkout@v4
 
-    -name: print message
-     run: echo "hello github actions"
+      - name: check git version
+        run: git --version
+
+      - name: print message
+        run: echo "hello github actions"
