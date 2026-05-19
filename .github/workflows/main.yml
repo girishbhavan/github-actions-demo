@@ -12,5 +12,5 @@ jobs:
     -name: print message
      run: echo "hello github actions"
 
-     -name: check git version
-      run: git --version
+    -name: check git version
+     run: git --version
